@@ -60,12 +60,13 @@
 	<main class="container">
 		<h1 class="page-title">Моноподы для селфи</h1>
 		<ul class="breadcrumbs">
-			<li><a href="index.html">Главная</a></li>
-			<li><a href="catalog.html">Каталог товаров</a></li>
-			<li><a href="breadcrumbs-current.html">Моноподы для селфи</a></li>
+			<li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
+			<li class="breadcrumbs-item"><a href="catalog.html">Каталог товаров</a></li>
+			<li class="breadcrumbs-item"><a href="breadcrumbs-current.html">Моноподы для селфи</a></li>
 		</ul>
+		<div class="catalog-wrapper">
 		<section class="filters">
-			<h2>Фильтр:</h2>
+			<h2 class="filter-name">Фильтр:</h2>
 			<form class="filter" method="get" action="https://echo.htmlacademy.ru" oninput="level.value = flevel.valueAsNumber">
 				<fieldset>
 					<legend>Стоимость:</legend>
@@ -114,6 +115,7 @@
 			</form>
 		</section>
 		
+		<div class="right-section">
 		<section class="sorting">
 			<h2>Сортировка:</h2>
 				<ul class="sorting-item">
@@ -194,7 +196,8 @@
 				<li class="pagination-item"><a href="#">Вперед</a></li>
 			</ul>
 		</section>
-			
+		</div>	
+		</div>
 			
 	</main>
 		<footer class="all-footer">
