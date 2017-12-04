@@ -12,9 +12,9 @@
 	<header class="main-header">
 		<div class="container-nav-wrapper">
 		<nav class="main-navigation">
-			<a class="main-logo"  href="index.html">
+			<!--<a class="main-logo"  href="index.html">
 				<img src="img/header/logo.png" width="164" height="36" alt="Логотип DEVICE">
-			</a>
+			</a>-->
 			
 				<div class="container-nav">
 					
@@ -66,14 +66,33 @@
 		</ul>
 		<div class="catalog-wrapper">
 		<section class="filters">
-			<h2 class="filter-name">Фильтр:</h2>
-			<form class="filter" method="get" action="https://echo.htmlacademy.ru" oninput="level.value = flevel.valueAsNumber">
+			
+				<h2 class="filter-name">Фильтр:</h2>
+			
+			<form class="filter" method="get" action="https://echo.htmlacademy.ru">
 				<fieldset>
-					<legend>Стоимость:</legend>
-              		<input name="flevel" id="flying" type="range" min="0" max="5000" step="100">
-					<output for="flying" name="level">0</output>
-				</fieldset>
+              <div class="rang-filter">
+                <legend>Стоимость</legend>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle toggle-min"></div>
+                  <div class="range-toggle toggle-max"></div> 
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">от 
+                    <input name="min-price" type="text" value="0">
+                  </label>
+                  <label class="max-price">до 
+                    <input name="max-price" type="text" value="5000">
+                  </label>
+                </div>
+              </div> 
+					</fieldset>
+				
 				<fieldset>
+					<div class="color-wrapper">
                 	<legend>Цвет</legend>
                 	<ul class="filter-color">
                   		<li class="filter-color-list">
@@ -97,7 +116,9 @@
                     		<label for="filter-pink">Розовый</label>
                   		</li>
                 	</ul>
+						</div>
               	</fieldset>
+					
 				<fieldset>
                 <legend>Bluetooth</legend>
                   <ul class="filter-bluetooth">
@@ -128,6 +149,8 @@
 					<li>
 						<a href="#">По популярности</a>
 					</li>
+					<li><a class="up"></a></li>
+					<li><a class="down"></a></li>
 				</ul>
 		</section>
 		<section class="catalog">
@@ -137,10 +160,12 @@
 					<a href="catalog-item.html">
 						 <img src="img/catalog/item-1.png" width="360" height="380" alt="Любительская селфи-палка">
 						</a>
-					<h3>
+					<div class="name-i-price">
+					<h3 class="note">
 						<a href="catalog-item.html">Любительская селфи-палка</a>
 					</h3>
 						<p class="price-item">500 руб.</p>
+						</div>
 					<div class="step">
 						<a class="button" href="#">В корзину</a>
 						<a class="button-compare" href="#">Добавить к сравнению</a>
@@ -150,10 +175,12 @@
 					<a href="catalog-item.html">
 						 <img src="img/catalog/item-2.png" width="360" height="380" alt="Профессиональная селфи-палка">
 						</a>
-					<h3>
-						<a href="catalog-item.html">Профессиональная селфи-палка</a>
+					<div class="name-i-price">
+					<h3 class="note">
+						<a href="catalog-item.html">Профессиональная <nobr>селфи-палка</nobr></a>
 					</h3>
 						<p class="price-item">1500 руб.</p>
+					</div>
 					<div class="step">
 						<a class="button" href="#">В корзину</a>
 						<a class="button-compare" href="#">Добавить к сравнению</a>
@@ -163,10 +190,12 @@
 					<a href="catalog-item.html">
 						 <img src="img/catalog/item-3.png" width="360" height="380" alt="Непотопляемая селфи-палка">
 						</a>
-					<h3>
+					<div class="name-i-price">
+					<h3 class="note">
 						<a href="catalog-item.html">Непотопляемая селфи-палка</a>
 					</h3>
 						<p class="price-item">2500 руб.</p>
+					</div>
 					<div class="step">
 						<a class="button" href="#">В корзину</a>
 						<a class="button-compare" href="#">Добавить к сравнению</a>
@@ -176,14 +205,19 @@
 					<a href="catalog-item.html">
 						 <img src="img/catalog/item-4.png" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
 						</a>
-					<h3>
+					<div class="name-i-price">
+					<h3 class="note">
 						<a href="catalog-item.html">Селфи-палка «Следуй за мной»</a>
 					</h3>
 						<p class="price-item">4900 руб.</p>
+					</div>
 					<div class="step">
 						<a class="button" href="#">В корзину</a>
 						<a class="button-compare" href="#">Добавить к сравнению</a>
 					</div>
+					<div class="marker">
+                    <div class="marker-item">New</div>
+                </div> 
 				</li>
 			</ul>
 			
