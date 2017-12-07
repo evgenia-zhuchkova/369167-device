@@ -48,7 +48,7 @@ ul {
 }
 
 .main-header {
-	min-height: 300px;	
+	min-height: 186px;	
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -1504,8 +1504,7 @@ body {
 	padding:0;
 }
 
-p {margin:0;
-}
+
 /*Стиль h2 в каталоге*/
 .page-title {
 	width:1140px;
