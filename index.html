@@ -34,13 +34,13 @@
 			</div>
 		
 			<ul class="site-navigation">
-				<li class="site-navigation-item"><a href="catalog.html">Каталог товаров</a></li>
+				<li class="site-navigation-item plus"><a href="catalog.html">Каталог товаров</a></li>
 				<div class="catalog-menu-wrapper">
 						<ul class="catalog-menu">
 						<li class="catalog-menu-item"><a href="vr.html">Виртуальная реальность</a></li>
 						<li class="catalog-menu-item"><a href="fitwristbands.html">Фитнес-браслеты</a></li>
 						<li class="catalog-menu-item"><a href="quadcopters.html">Квадрокоптеры</a></li>
-						<li class="catalog-menu-item"><a href="monoselfi.html">Моноподы для селфи</a></li>
+						<li class="catalog-menu-item"><a href="catalog.html">Моноподы для селфи</a></li>
 						<li class="catalog-menu-item"><a href="smartwatch.html">Умные часы</a></li>
 						<li class="catalog-menu-item"><a href="actcameras.html">Экшн-камеры</a></li>	
 					</ul>
@@ -68,13 +68,13 @@
           			<label for="button2"><span class="visually-hidden">Второй слайд</span></label>
           			<label for="button3"><span class="visually-hidden">Третий слайд</span></label>
         		</div>
-			<div class="slide1">
+			<div class="slide active">
 				<div class="slide-photo">
 				<a class="catalog-item-photo"  href="catalog-item.html">
 					<img src="img/slider/slider-1.png" width="384" height="486" alt="Палка для селфи">
 				</a>
 					</div>
-				<div class="slide1-wrapper">
+				<div class="slide-wrapper">
 					<span class="slide-number">01</span>
 					<h2>Делай селфи,<br>как Бен Стиллер!</h2>
 					<p>Самая длинная палка для селфи доступна в нашем магазине.
@@ -92,13 +92,13 @@
 		
 					</div>
 			</div>
-			<div class="slide2">
+			<div class="slide">
 				<div class="slide-photo">
 				<a class="catalog-item-photo"  href="catalog-item.html">
 					<img src="img/slider/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
 				</a>
 					</div>
-				<div class="slide2-wrapper">
+				<div class="slide-wrapper">
 					<span class="slide-number">02</span>
 				<h2>Худеем<br>правильно!</h2>
 				<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету</p>
@@ -111,13 +111,13 @@
 					
 				</div>
 			</div>
-			<div class="slide3">
+			<div class="slide">
 				<div class="slide-photo">
 				<a class="catalog-item-photo"  href="catalog-item.html">
 					<img src="img/slider/slider-3.png" width="526" height="334" alt="Квадракоптер">
 				</a>
 					</div>
-				<div class="slide3-wrapper">
+				<div class="slide-wrapper">
 					<span class="slide-number">03</span>
 				<h2>Порхает как бабочка,<br>жалит как пчела!</h2>
 				<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
@@ -179,16 +179,17 @@
 		</section>
 		<section class="services">
 			<h2 class="visually-hidden">Услуги</h2>
+			<div class="services-wrapper">
 			<nav class="set-of-services">
 				<ul class="set-of-services-name">
-					<li class="set-of-services-list"><a class="services-button" href="delivery.html">Доставка</a></li>
+					<li class="set-of-services-list active"><a class="services-button" href="delivery.html">Доставка</a></li>
 					<li class="set-of-services-list"><a class="services-button" href="guarantee.html">Гарантия</a></li>
 					<li class="set-of-services-list"><a class="services-button" href="credit.html">Кредит</a></li>
 					
 				</ul>
 			</nav>
 			<ul class="services-description">
-				<li class="services-description-list services-description-delivery ">
+				<li class="services-description-list services-description-delivery active">
 					<h2>Доставка</h2>
 					<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
 				</li>
@@ -202,6 +203,7 @@
                 вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
 				</li>	
 			</ul>
+				</div>
 			</section>
 		<section class="brands">
 			<h2 class="visually-hidden">Бренды</h2>
@@ -253,10 +255,9 @@
 		</div>
 	</main>
 	<footer class="all-footer">
+		<div class="footer-wrapper">
 		<div class="left-part-footer">
-			<a class="footer-logo"  href="index.html">
-				<img src="img/footer/footer-logo.png" width="163" height="36" alt="Логотип DEVICE">
-			</a>
+			<h1 class="footer-logo"><a href="index.html">DEVICE</a></h1>
 			<p class="footer-contacts">г. Москва, ул. Строителей, 15</p>
 		</div>
 		<div class="center-part-footer">
@@ -278,53 +279,38 @@
 				<li class="footer-basket-link"><a href="basket.html">Корзина</a></li>
 			</ul>
 			<p class="phone">Тел.:+7(495) 495-95-95</p>
-			<a class="academy-logo"  href="https://htmlacademy.ru">
-				
-			</a>
+			<p class="academy-logo">
+				<a href="https://htmlacademy.ru"><span class="visually-hidden">HTML Academy</span></a>
+			</p>	
+		</div>	
 		</div>
 	</footer>
-	<section class="modal modal-login">
-		<h2>Личный кабинет</h2>
-		<p>Введите свой логин и пароль</p>
-		<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="user-login">Логин</label>
-          <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
-        </p>
-        <p>
-          <label for="user-password">Пароль</label>
-          <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
-        </p>
-		<button class="button" type="submit">Войти</button>
-		</form>
-		<button class="modal-close" type="button">Закрыть</button>
-	</section>
 	<section class="modal modal-map">
 		<h2 class="visually-hidden">Как до нас добраться</h2>
 		<img src="img/map popup/map-big.png" width="994" height="593" alt="Офис компании расположен по адресу ул. Строителей, 15">
-		<button class="modal-close" type="button">Закрыть</button>
+		<button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
 	</section>
 	<section class="modal modal-write">
-		<h2>Напишите нам</h2>
+		<h2 class="visually-hidden">Напишите нам</h2>
 		<form class="write-us" action="https://echo.htmlacademy.ru" method="post">
-			<p>
+			<p class="modal-entry">
 				<label for="name-modal-write">Ваше имя:</label>
 				<br>
 				<input type="text" name="name" id="name-modal-write" placeholder="Представьтесь, пожалуйста">
 			</p>
-			<p>
+			<p class="modal-entry">
 				<label for="email-modal-write">Ваш e-mail:</label>
 				<br>
 				<input type="email" name="email" id="email-modal-write" placeholder="Для отправки ответа">
 			</p>
-			<p>
+			<p class="modal-entry">
 				<label for="text-modal-write">Текст письма:</label>
 				<br>
 				<textarea type="text" name="letter-text" id="text-modal-write" rows="10" cols="50" placeholder="В свободной форме"></textarea>
 			</p>
-			<input type="submit" value="Отправить">
-		</form>
-		<button class="modal-close" type="button">Закрыть</button>
+		<button class="button" type="submit"> Отправить </button>
+				</form>
+		<button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
 	</section>
 </body>
 </html>
