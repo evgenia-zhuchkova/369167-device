@@ -2029,9 +2029,10 @@ body {
 
 /*Форма обратной связи*/
 
-.modal-write{
+.modal-write,
+.modal-map {
   position: fixed;
- 
+ display:none;
   width: 960px;
   height: 560px;
   top: 50%;
