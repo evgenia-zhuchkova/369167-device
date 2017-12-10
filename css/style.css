@@ -484,11 +484,10 @@ input[type="radio"].visually-hidden {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-}
-
-.catalog-menu-fil {
 	opacity: 1;
 }
+
+
 
 /*  Главная страница  */
 /*Раздел слайдера*/
@@ -993,7 +992,6 @@ input[type="radio"].visually-hidden {
 	-ms-filter: grayscale(100%);
 	-o-filter: grayscale(100%);
 	filter: grayscale(100%);
-	-webkit-filter: gray;
 	        filter: gray; /* IE 6-9 */
 }
 
@@ -1514,6 +1512,10 @@ input[type="radio"].visually-hidden {
 	list-style: none;
 }
 
+.user-navigation-inner a{
+	color: #000000;
+}
+
 .user-navigation-inner a {
 	display:block;
 }
@@ -1564,6 +1566,14 @@ input[type="radio"].visually-hidden {
 }
 
 .user-link:active::before {
+	opacity: 0.3;
+}
+
+.user-navigation-inner a:hover {
+	opacity: 0.6;
+}
+
+.user-navigation-inner a:active {
 	opacity: 0.3;
 }
 
